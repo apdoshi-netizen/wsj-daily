@@ -1,0 +1,30 @@
+name: WSJ Daily picks
+
+on:
+  schedule:
+    # 11:30 UTC daily ≈ 6:30 AM EST / 7:30 AM EDT — comfortably before the 9 AM ET send.
+    - cron: '30 11 * * *'
+  workflow_dispatch: {}   # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate picks.json
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 generate.py
+      - name: Commit picks.json if changed
+        run: |
+          git config user.name "wsj-daily-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add picks.json
+          git diff --staged --quiet || git commit -m "picks: $(TZ=America/New_York date +%F)"
+          git push
