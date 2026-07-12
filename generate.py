@@ -16,15 +16,24 @@ import os, sys, re, json, subprocess, urllib.parse, email.utils, datetime
 import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
-MODEL = "claude-haiku-4-5"
+MODEL = "claude-sonnet-5"
+# Per slot: (label, Google News query, max age hrs, title-keyword filter).
+# The keyword filter is applied to candidate titles (except Op-Ed) so off-topic
+# items the fuzzy feed returns (e.g. a box-office story in the deal feed) are
+# dropped before curation. Wider windows let weekend runs still see the week's
+# real stories; the prompt tells the model to prefer fresher.
 SLOTS = [
-    ("Macro", '(economy OR inflation OR "Federal Reserve" OR "interest rates" OR jobs OR GDP OR tariffs OR Treasury OR "central bank") site:wsj.com when:2d', 48,
-     ["econom", "inflation", "fed", "rate", "jobs", "gdp", "tariff", "treasury", "yield", "central bank", "dollar", "recession"]),
-    ("Industry / Company / Transaction", '(merger OR acquisition OR deal OR earnings OR takeover OR IPO OR bankruptcy OR buyout) site:wsj.com when:2d', 48,
-     ["merger", "acqui", "deal", "earnings", "takeover", "ipo", "bankrupt", "buyout", "bid", "billion", "stake", "shares"]),
-    ("Op-Ed", 'site:wsj.com/opinion when:4d', 96, ["opinion"]),
+    ("Macro", '(economy OR inflation OR "Federal Reserve" OR "interest rates" OR jobs OR GDP OR tariffs OR Treasury OR "central bank") site:wsj.com when:3d', 72,
+     ["econom", "inflation", "fed", "rate", "jobs", "unemploy", "gdp", "tariff", "trade", "treasury", "yield", "bond",
+      "central bank", "dollar", "currency", "recession", "growth", "prices", "oil", "stimulus", "deficit"]),
+    ("Industry / Company / Transaction", '(merger OR acquisition OR deal OR earnings OR takeover OR IPO OR bankruptcy OR buyout) site:wsj.com when:3d', 72,
+     ["merger", "acqui", "deal", "takeover", "ipo", "bankrupt", "buyout", "bid", "billion", "million", "stake",
+      "shares", "earnings", "profit", "revenue", "invest", "fund", "raise", "spinoff", "sells", "buys", "to buy"]),
+    ("Op-Ed", 'site:wsj.com/opinion when:4d', 96, None),
     ("Tech", 'site:wsj.com/tech when:2d', 48,
-     ["ai", "artificial intelligence", "chip", "semiconductor", "software", "tech", "nvidia", "apple", "google", "microsoft", "openai", "meta", "data center"]),
+     ["ai", "artificial intelligence", "chip", "semiconductor", "software", "tech", "nvidia", "apple", "google",
+      "microsoft", "openai", "meta", "amazon", "tesla", "intel", "amd", "tsmc", "data center", "cloud", "cyber",
+      "robot", "quantum", "startup", "app", "internet", "silicon"]),
 ]
 NOISE = re.compile(r'(Print Edition|News Archive|Exchange Rate|Roundup: Market Talk|What to Read|WSJ Dollar Index|Latest News and Forecasts)', re.I)
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
@@ -38,7 +47,7 @@ def curl(args):
 def fetch_candidates():
     now = datetime.datetime.now(datetime.timezone.utc)
     out = {}
-    for key, query, maxage, _kw in SLOTS:
+    for key, query, maxage, kw in SLOTS:
         url = "https://news.google.com/rss/search?q=" + urllib.parse.quote(query) + "&hl=en-US&gl=US&ceid=US:en"
         try:
             root = ET.fromstring(curl([url]))
@@ -51,6 +60,9 @@ def fetch_candidates():
             title = re.sub(r"\s*-\s*WSJ\s*$", "", (it.findtext("title") or "").strip())
             if not title or title in seen or NOISE.search(title):
                 continue
+            # Opinion pieces belong only in the Op-Ed slot (kw is None there).
+            if kw and title.lower().startswith("opinion"):
+                continue
             try:
                 dt = email.utils.parsedate_to_datetime(it.findtext("pubDate"))
             except Exception:
@@ -60,8 +72,14 @@ def fetch_candidates():
             seen.add(title)
             rows.append((dt, title, it.findtext("link")))
         rows.sort(reverse=True)
+        # Drop off-topic titles (the fuzzy feed leaks general news); keep the
+        # keyword-matching subset unless that leaves too few to choose from.
+        if kw:
+            filt = [r for r in rows if any(k in r[1].lower() for k in kw)]
+            if len(filt) >= 3:
+                rows = filt
         out[key] = [{"i": i, "title": t, "ageHrs": round((now - dt).total_seconds() / 3600, 1), "url": u}
-                    for i, (dt, t, u) in enumerate(rows[:12])]
+                    for i, (dt, t, u) in enumerate(rows[:15])]
     return out
 
 
@@ -72,17 +90,21 @@ def curate_with_claude(cands):
     slim = {k: [{"i": c["i"], "title": c["title"], "ageHrs": c["ageHrs"]} for c in v] for k, v in cands.items()}
     rubric = (
         "Macro: the story with the broadest cross-asset, market-moving significance "
-        "(central banks, major data prints, fiscal/tariff/policy, big rate/FX/oil moves). "
-        "Industry/Company/Transaction: one concrete corporate story — a named deal, financing, "
-        "material earnings, or major regulatory/legal/product event. "
-        "Op-Ed: one substantive opinion column. "
-        "Tech: one consequential tech-industry development (AI, chips, big-tech, major product, regulation).")
+        "(central banks, major data prints like CPI/jobs/GDP, fiscal/tariff/policy, big rate/FX/oil moves). "
+        "NOT voter sentiment, polling, or general political color unless it is clearly moving markets. "
+        "Industry/Company/Transaction: one concrete corporate story — a NAMED deal/M&A, financing, IPO, "
+        "material earnings, or major regulatory/legal/product event, ideally with a dollar figure or named parties. "
+        "NOT box-office/entertainment reviews, sports, lifestyle, or human-interest pieces. "
+        "Op-Ed: one substantive argument column (prefer economics/business/policy over pure culture-war). "
+        "Tech: one consequential tech-industry development (AI, chips, big-tech strategy, major product, regulation, "
+        "notable research). NOT gadget reviews or lifestyle-tech.")
     user = (
         "Candidate WSJ headlines by slot (newest first; ageHrs = hours old):\n"
         + json.dumps(slim, ensure_ascii=False) +
         "\n\nFor EACH slot pick the ONE headline that best fits that slot's topic per the rubric. "
-        "The feeds are noisy — a fresh headline that is off-topic for the slot must NOT be chosen; "
-        "topical fit first, then prefer fresher among good fits. The 4 picks must be 4 distinct stories. "
+        "Topical fit is the FIRST filter — a fresh but off-topic headline must NOT be chosen; only after "
+        "topical fit, prefer the fresher/more significant option. If a slot's candidates are all weak fits, "
+        "pick the least-bad one. The 4 picks must be 4 distinct stories. "
         "Write a summary <=25 words grounded ONLY in the headline. Return ONLY:\n"
         '{"picks":[{"slot":"Macro","i":N,"summary":"..."},'
         '{"slot":"Industry / Company / Transaction","i":N,"summary":"..."},'
@@ -101,7 +123,10 @@ def heuristic(cands):
     picks = []
     for key, _q, _m, kw in SLOTS:
         lst = cands.get(key, [])
-        chosen = next((c for c in lst if any(k in c["title"].lower() for k in kw)), lst[0] if lst else None)
+        chosen = None
+        if kw:
+            chosen = next((c for c in lst if any(k in c["title"].lower() for k in kw)), None)
+        chosen = chosen or (lst[0] if lst else None)
         picks.append({"slot": key, "i": chosen["i"] if chosen else -1, "summary": chosen["title"] if chosen else ""})
     return picks
 
