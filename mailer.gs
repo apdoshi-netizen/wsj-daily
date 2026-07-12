@@ -15,8 +15,7 @@
 // ---- CONFIG -----------------------------------------------------------------
 var CONFIG = {
   // Raw URL of picks.json in your GitHub repo (GitHub Actions commits it daily).
-  // Replace USERNAME/REPO with yours.
-  PICKS_URL: 'https://raw.githubusercontent.com/USERNAME/REPO/main/picks.json',
+  PICKS_URL: 'https://raw.githubusercontent.com/apdoshi-netizen/wsj-daily/main/picks.json',
   RECIPIENTS_DOC_ID: '1jbUFrqpKCN1TUfvJb5VCOKkNW6EkTMFa40FZsYA4YhA',
   SEND_HOUR: 9,                  // 9 AM in the project timezone (set to ET)
   SUBJECT_PREFIX: 'WSJ',
