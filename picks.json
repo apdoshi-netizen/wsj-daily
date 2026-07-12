@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-12",
+  "generatedAt": "2026-07-12T20:58:21.294525+00:00",
+  "picks": [
+    {
+      "slot": "Macro",
+      "label": "Macro",
+      "title": "What Trump Voters Say About the Economy Now",
+      "url": "https://www.wsj.com/economy/trump-voters-economy-2026-6c76d508",
+      "summary": "Trump voters assess economic conditions and outlook following recent political developments and policy shifts.",
+      "source": "WSJ"
+    },
+    {
+      "slot": "Industry / Company / Transaction",
+      "label": "Industry / Company / Transaction",
+      "title": "Disney’s ‘Moana’ Remake Crashes at Box Office",
+      "url": "https://www.wsj.com/business/media/disneys-moana-remake-crashes-at-box-office-de48af2c",
+      "summary": "Disney's Moana remake underperforms at box office, signaling challenges for major studio tentpole releases.",
+      "source": "WSJ"
+    },
+    {
+      "slot": "Op-Ed",
+      "label": "Op-Ed",
+      "title": "Opinion | Socialists Lead Democrats Into the Tea-Party Trap",
+      "url": "https://www.wsj.com/opinion/socialists-lead-democrats-into-the-tea-party-trap-c991b290",
+      "summary": "Column argues socialist influence within Democratic Party risks repeating Tea Party movement's fractious trajectory.",
+      "source": "WSJ"
+    },
+    {
+      "slot": "Tech",
+      "label": "Tech",
+      "title": "Intel’s Insiders",
+      "url": "https://www.wsj.com/tech/ai/intels-insiders-1fdaa97f",
+      "summary": "Intel faces insider-related challenges as company navigates competitive pressures and leadership transitions.",
+      "source": "WSJ"
+    }
+  ]
+}
