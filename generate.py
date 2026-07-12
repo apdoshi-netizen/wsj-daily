@@ -115,7 +115,13 @@ def curate_with_claude(cands):
     resp = curl(["-H", "x-api-key: " + key, "-H", "anthropic-version: 2023-06-01",
                  "-H", "content-type: application/json", "--data", payload,
                  "https://api.anthropic.com/v1/messages"])
-    text = json.loads(resp)["content"][0]["text"]
+    try:
+        data = json.loads(resp)
+    except Exception:
+        raise RuntimeError("non-JSON API response: " + resp[:400])
+    if "content" not in data:
+        raise RuntimeError("API error response: " + json.dumps(data)[:400])
+    text = data["content"][0]["text"]
     return json.loads(re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.I).strip())["picks"]
 
 
@@ -158,7 +164,7 @@ def main():
         selections = curate_with_claude(cands)
         print("curation: Claude", file=sys.stderr)
     except Exception as e:
-        print("curation: heuristic fallback (" + str(e)[:120] + ")", file=sys.stderr)
+        print("curation: heuristic fallback (" + str(e)[:400] + ")", file=sys.stderr)
         selections = heuristic(cands)
 
     labels = {k: k for k, _q, _m, _kw in SLOTS}
