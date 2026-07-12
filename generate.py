@@ -121,7 +121,10 @@ def curate_with_claude(cands):
         raise RuntimeError("non-JSON API response: " + resp[:400])
     if "content" not in data:
         raise RuntimeError("API error response: " + json.dumps(data)[:400])
-    text = data["content"][0]["text"]
+    # Grab the first text block (some models may return non-text blocks first).
+    text = next((b.get("text") for b in data["content"] if b.get("type") == "text"), None)
+    if not text:
+        raise RuntimeError("no text block; content=" + json.dumps(data["content"])[:400])
     return json.loads(re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.I).strip())["picks"]
 
 
