@@ -1,29 +1,29 @@
 {
   "date": "2026-07-12",
-  "generatedAt": "2026-07-12T20:58:21.294525+00:00",
+  "generatedAt": "2026-07-12T21:02:31.936946+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
       "title": "What Trump Voters Say About the Economy Now",
       "url": "https://www.wsj.com/economy/trump-voters-economy-2026-6c76d508",
-      "summary": "Trump voters assess economic conditions and outlook following recent political developments and policy shifts.",
+      "summary": "What Trump Voters Say About the Economy Now",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Disney’s ‘Moana’ Remake Crashes at Box Office",
-      "url": "https://www.wsj.com/business/media/disneys-moana-remake-crashes-at-box-office-de48af2c",
-      "summary": "Disney's Moana remake underperforms at box office, signaling challenges for major studio tentpole releases.",
+      "title": "U.S. and Canada Agree to Open New Detroit Bridge After Deal on Tolls",
+      "url": "https://www.wsj.com/world/americas/u-s-canada-agree-to-open-new-detroit-bridge-after-deal-on-tolls-d0956f08",
+      "summary": "U.S. and Canada Agree to Open New Detroit Bridge After Deal on Tolls",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Socialists Lead Democrats Into the Tea-Party Trap",
-      "url": "https://www.wsj.com/opinion/socialists-lead-democrats-into-the-tea-party-trap-c991b290",
-      "summary": "Column argues socialist influence within Democratic Party risks repeating Tea Party movement's fractious trajectory.",
+      "title": "Opinion | An SOS From the Cuban People",
+      "url": "https://www.wsj.com/opinion/an-sos-from-the-cuban-people-67343e31",
+      "summary": "Opinion | An SOS From the Cuban People",
       "source": "WSJ"
     },
     {
@@ -31,7 +31,7 @@
       "label": "Tech",
       "title": "Intel’s Insiders",
       "url": "https://www.wsj.com/tech/ai/intels-insiders-1fdaa97f",
-      "summary": "Intel faces insider-related challenges as company navigates competitive pressures and leadership transitions.",
+      "summary": "Intel’s Insiders",
       "source": "WSJ"
     }
   ]
