@@ -1,37 +1,37 @@
 {
   "date": "2026-07-12",
-  "generatedAt": "2026-07-12T21:04:15.100935+00:00",
+  "generatedAt": "2026-07-12T21:05:24.511579+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "What Trump Voters Say About the Economy Now",
-      "url": "https://www.wsj.com/economy/trump-voters-economy-2026-6c76d508",
-      "summary": "What Trump Voters Say About the Economy Now",
+      "title": "Treasury Yields Rise Ahead of Inflation Data, Warsh Hearings",
+      "url": "https://www.wsj.com/finance/investing/jgbs-edge-higher-tracking-gains-in-u-s-treasurys-2cb325e7",
+      "summary": "Treasury yields rise as markets await key inflation data and Warsh's Fed nomination hearings.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "U.S. and Canada Agree to Open New Detroit Bridge After Deal on Tolls",
-      "url": "https://www.wsj.com/world/americas/u-s-canada-agree-to-open-new-detroit-bridge-after-deal-on-tolls-d0956f08",
-      "summary": "U.S. and Canada Agree to Open New Detroit Bridge After Deal on Tolls",
+      "title": "Exclusive | Warburg Pincus Near Over $7 Billion Deal for Specialty-Pharmacy Company",
+      "url": "https://www.wsj.com/business/deals/warburg-pincus-near-over-7-billion-deal-for-specialty-pharmacy-company-99030b6f",
+      "summary": "Warburg Pincus nears over $7 billion acquisition deal for a specialty-pharmacy company.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | An SOS From the Cuban People",
-      "url": "https://www.wsj.com/opinion/an-sos-from-the-cuban-people-67343e31",
-      "summary": "Opinion | An SOS From the Cuban People",
+      "title": "Opinion | School Choice Succeeds in Arkansas",
+      "url": "https://www.wsj.com/opinion/school-choice-succeeds-in-arkansas-17af69ed",
+      "summary": "Op-ed argues Arkansas's school choice program is delivering successful educational outcomes for students.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Intel’s Insiders",
-      "url": "https://www.wsj.com/tech/ai/intels-insiders-1fdaa97f",
-      "summary": "Intel’s Insiders",
+      "title": "Apple Sues OpenAI, Alleging It Stole Trade Secrets",
+      "url": "https://www.wsj.com/tech/apple-openai-lawsuit-f86bd58c",
+      "summary": "Apple sues OpenAI, alleging the AI company stole its trade secrets.",
       "source": "WSJ"
     }
   ]
