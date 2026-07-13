@@ -1,37 +1,37 @@
 {
-  "date": "2026-07-12",
-  "generatedAt": "2026-07-12T21:05:24.511579+00:00",
+  "date": "2026-07-13",
+  "generatedAt": "2026-07-13T13:16:19.388507+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Treasury Yields Rise Ahead of Inflation Data, Warsh Hearings",
-      "url": "https://www.wsj.com/finance/investing/jgbs-edge-higher-tracking-gains-in-u-s-treasurys-2cb325e7",
-      "summary": "Treasury yields rise as markets await key inflation data and Warsh's Fed nomination hearings.",
+      "title": "Gold Slides as U.S.-Iran Strikes Push Oil Higher",
+      "url": "https://www.wsj.com/finance/commodities-futures/gold-declines-amid-renewed-strikes-in-u-s-iran-conflict-daad6960",
+      "summary": "Gold fell as U.S.-Iran strikes pushed oil prices sharply higher, roiling cross-asset markets.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Exclusive | Warburg Pincus Near Over $7 Billion Deal for Specialty-Pharmacy Company",
-      "url": "https://www.wsj.com/business/deals/warburg-pincus-near-over-7-billion-deal-for-specialty-pharmacy-company-99030b6f",
-      "summary": "Warburg Pincus nears over $7 billion acquisition deal for a specialty-pharmacy company.",
+      "title": "Meta Lifts Cost of Louisiana Data Center to $50 Billion",
+      "url": "https://www.wsj.com/tech/meta-lifts-cost-of-louisiana-data-center-to-50-billion-02b2eb25",
+      "summary": "Meta raised the cost of its Louisiana data center project to $50 billion.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | School Choice Succeeds in Arkansas",
-      "url": "https://www.wsj.com/opinion/school-choice-succeeds-in-arkansas-17af69ed",
-      "summary": "Op-ed argues Arkansas's school choice program is delivering successful educational outcomes for students.",
+      "title": "Opinion | Capitalism Gets a Bum Rap",
+      "url": "https://www.wsj.com/opinion/free-expression/capitalism-gets-a-bum-rap-c36d1cdf",
+      "summary": "Op-ed argues capitalism is unfairly maligned despite driving prosperity and innovation.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Apple Sues OpenAI, Alleging It Stole Trade Secrets",
-      "url": "https://www.wsj.com/tech/apple-openai-lawsuit-f86bd58c",
-      "summary": "Apple sues OpenAI, alleging the AI company stole its trade secrets.",
+      "title": "Apple’s ‘Thermonuclear’ Response to the OpenAI Threat",
+      "url": "https://www.wsj.com/tech/ai/apples-thermonuclear-response-to-the-openai-threat-8d51c814",
+      "summary": "Apple reportedly plans aggressive countermeasures against OpenAI amid trade-secret lawsuit and rivalry.",
       "source": "WSJ"
     }
   ]
