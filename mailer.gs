@@ -35,7 +35,8 @@ function sendDaily() {
     Logger.log('No fresh picks for ' + today + ' (found: ' + (data ? data.date : 'none') + ').');
     if (CONFIG.ALERT_ON_MISSING) {
       GmailApp.sendEmail(recipients[0], CONFIG.SUBJECT_PREFIX + ' — no digest today',
-        'No picks file dated ' + today + ' was found in Drive, so no digest was sent.');
+        'No picks dated ' + today + ' were available (found: ' + (data ? data.date : 'none') +
+        '), so no digest was sent.');
     }
     return;
   }

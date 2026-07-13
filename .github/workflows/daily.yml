@@ -2,8 +2,11 @@ name: WSJ Daily picks
 
 on:
   schedule:
-    # 11:30 UTC daily ≈ 6:30 AM EST / 7:30 AM EDT — comfortably before the 9 AM ET send.
-    - cron: '30 11 * * *'
+    # Multiple shots before the 9 AM ET send (13:00 UTC EDT / 14:00 UTC EST), for
+    # redundancy — GitHub's scheduler can delay or skip an individual tick. Each
+    # run overwrites picks.json, so the latest good one before 9 AM ET wins.
+    # 06:17, 09:17, 11:17, 12:17 UTC = ~2:17 / 5:17 / 7:17 / 8:17 AM EDT.
+    - cron: '17 6,9,11,12 * * *'
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
