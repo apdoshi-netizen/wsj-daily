@@ -1,29 +1,29 @@
 {
   "date": "2026-07-14",
-  "generatedAt": "2026-07-14T10:56:18.308625+00:00",
+  "generatedAt": "2026-07-14T12:40:08.554381+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Dollar Could Rise if U.S. Core Inflation Data Exceed Forecasts",
-      "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-may-be-weighed-by-risk-off-sentiment-f4d90e8d",
-      "summary": "Dollar Could Rise if U.S. Core Inflation Data Exceed Forecasts",
+      "title": "Oil Surges Most Since 2020, Reflecting Bet That Strait Won’t Go Back to Normal",
+      "url": "https://www.wsj.com/finance/commodities-futures/oil-surges-most-since-2020-reflecting-bet-that-strait-wont-go-back-to-normal-9aa1639f",
+      "summary": "Oil prices spike sharply as markets bet Strait of Hormuz disruptions will persist, roiling global markets.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Ericsson Cautions on Lower Profitability Due to Rising Component Costs",
-      "url": "https://www.wsj.com/business/earnings/ericsson-cautions-on-lower-profitability-due-to-rising-component-cost-pressure-33b5d3cf",
-      "summary": "Ericsson Cautions on Lower Profitability Due to Rising Component Costs",
+      "title": "Nippon Paint Makes $8.6 Billion Bid for AkzoNobel’s Decorative-Paints Unit",
+      "url": "https://www.wsj.com/business/deals/nippon-paint-makes-8-6-billion-bid-for-akzonobels-decorative-paints-unit-fb5c4b3f",
+      "summary": "Nippon Paint bids $8.6 billion for AkzoNobel's decorative-paints unit, a major cross-border M&A deal.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | How ‘The Odyssey’ Evolved",
-      "url": "https://www.wsj.com/opinion/free-expression/how-the-odyssey-evolved-bf487fec",
-      "summary": "Opinion | How ‘The Odyssey’ Evolved",
+      "title": "Opinion | Chicago’s Coming Pension ‘Pneumonia’",
+      "url": "https://www.wsj.com/opinion/susana-mendoza-chicago-pensions-stock-market-aaa2f9c6",
+      "summary": "Opinion piece warns Chicago faces a looming pension crisis, likened to onset of 'pneumonia.'",
       "source": "WSJ"
     },
     {
@@ -31,7 +31,7 @@
       "label": "Tech",
       "title": "Tower Semiconductor Shares Surge Premarket on Japanese Investment",
       "url": "https://www.wsj.com/tech/tower-semiconductor-shares-surge-premarket-on-japanese-investment-661aad5d",
-      "summary": "Tower Semiconductor Shares Surge Premarket on Japanese Investment",
+      "summary": "Tower Semiconductor shares jump premarket after Japanese investment boosts chipmaker's prospects.",
       "source": "WSJ"
     }
   ]
