@@ -1,37 +1,37 @@
 {
-  "date": "2026-07-13",
-  "generatedAt": "2026-07-13T13:16:19.388507+00:00",
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T08:27:55.941029+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Gold Slides as U.S.-Iran Strikes Push Oil Higher",
-      "url": "https://www.wsj.com/finance/commodities-futures/gold-declines-amid-renewed-strikes-in-u-s-iran-conflict-daad6960",
-      "summary": "Gold fell as U.S.-Iran strikes pushed oil prices sharply higher, roiling cross-asset markets.",
+      "title": "Oil Surges Most Since 2020, Reflecting Bet That Strait Won’t Go Back to Normal",
+      "url": "https://www.wsj.com/finance/commodities-futures/oil-surges-most-since-2020-reflecting-bet-that-strait-wont-go-back-to-normal-9aa1639f",
+      "summary": "Oil surges most since 2020 as markets bet Strait of Hormuz disruption will persist amid Iran conflict.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Meta Lifts Cost of Louisiana Data Center to $50 Billion",
-      "url": "https://www.wsj.com/tech/meta-lifts-cost-of-louisiana-data-center-to-50-billion-02b2eb25",
-      "summary": "Meta raised the cost of its Louisiana data center project to $50 billion.",
+      "title": "Nippon Paint Makes $8.6 Billion Bid for AkzoNobel’s Decorative-Paints Unit",
+      "url": "https://www.wsj.com/business/deals/nippon-paint-makes-8-6-billion-bid-for-akzonobels-decorative-paints-unit-fb5c4b3f",
+      "summary": "Nippon Paint makes $8.6 billion bid for AkzoNobel's decorative-paints business unit.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Capitalism Gets a Bum Rap",
-      "url": "https://www.wsj.com/opinion/free-expression/capitalism-gets-a-bum-rap-c36d1cdf",
-      "summary": "Op-ed argues capitalism is unfairly maligned despite driving prosperity and innovation.",
+      "title": "Opinion | Medicaid Spending Keeps Soaring",
+      "url": "https://www.wsj.com/opinion/medicaid-spending-congress-cbo-entitlements-obamacare-65020f17",
+      "summary": "Opinion argues Medicaid spending continues to soar despite reform efforts, raising fiscal policy concerns.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Apple’s ‘Thermonuclear’ Response to the OpenAI Threat",
-      "url": "https://www.wsj.com/tech/ai/apples-thermonuclear-response-to-the-openai-threat-8d51c814",
-      "summary": "Apple reportedly plans aggressive countermeasures against OpenAI amid trade-secret lawsuit and rivalry.",
+      "title": "Intel to Invest €5 Billion for Expanded Manufacturing in Ireland",
+      "url": "https://www.wsj.com/tech/intel-to-invest-5-billion-for-expanded-manufacturing-in-ireland-4adce56d",
+      "summary": "Intel to invest €5 billion expanding semiconductor manufacturing capacity in Ireland.",
       "source": "WSJ"
     }
   ]
