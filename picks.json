@@ -1,37 +1,37 @@
 {
   "date": "2026-07-15",
-  "generatedAt": "2026-07-15T08:35:29.223255+00:00",
+  "generatedAt": "2026-07-15T11:02:32.358533+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Inflation Slowed to 3.5% in June, as Americans Got a Break From Gasoline Prices",
-      "url": "https://www.wsj.com/economy/cpi-inflation-report-june-2026-afb89992",
-      "summary": "U.S. inflation slowed to 3.5% in June as gasoline prices gave consumers a break.",
+      "title": "",
+      "url": "",
+      "summary": "No WSJ pick today.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Williams Gets $5.34 Billion Investment from Blackstone-led Group",
-      "url": "https://www.wsj.com/finance/investing/williams-gets-5-34-billion-investment-from-blackstone-led-group-ac672a23",
-      "summary": "Blackstone-led group invests $5.34 billion in Williams, a major energy infrastructure deal.",
+      "title": "",
+      "url": "",
+      "summary": "No WSJ pick today.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Wealth Taxes Would Hit the Young Hardest",
-      "url": "https://www.wsj.com/opinion/wealth-taxes-would-hit-the-young-hardest-17df2ab2",
-      "summary": "Op-ed argues proposed wealth taxes would disproportionately burden younger generations over time.",
+      "title": "",
+      "url": "",
+      "summary": "No WSJ pick today.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "IBM Loses $69 Billion of Market Value in One Day in Latest AI-Fueled Selloff",
-      "url": "https://www.wsj.com/tech/ai/ibm-stock-profit-warning-earnings-software-8652c06e",
-      "summary": "IBM shed $69 billion in market value in one day amid broader AI-driven tech selloff.",
+      "title": "",
+      "url": "",
+      "summary": "No WSJ pick today.",
       "source": "WSJ"
     }
   ]
