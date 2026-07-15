@@ -1,37 +1,37 @@
 {
-  "date": "2026-07-14",
-  "generatedAt": "2026-07-14T12:40:08.554381+00:00",
+  "date": "2026-07-15",
+  "generatedAt": "2026-07-15T08:35:29.223255+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Oil Surges Most Since 2020, Reflecting Bet That Strait Won’t Go Back to Normal",
-      "url": "https://www.wsj.com/finance/commodities-futures/oil-surges-most-since-2020-reflecting-bet-that-strait-wont-go-back-to-normal-9aa1639f",
-      "summary": "Oil prices spike sharply as markets bet Strait of Hormuz disruptions will persist, roiling global markets.",
+      "title": "Inflation Slowed to 3.5% in June, as Americans Got a Break From Gasoline Prices",
+      "url": "https://www.wsj.com/economy/cpi-inflation-report-june-2026-afb89992",
+      "summary": "U.S. inflation slowed to 3.5% in June as gasoline prices gave consumers a break.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Nippon Paint Makes $8.6 Billion Bid for AkzoNobel’s Decorative-Paints Unit",
-      "url": "https://www.wsj.com/business/deals/nippon-paint-makes-8-6-billion-bid-for-akzonobels-decorative-paints-unit-fb5c4b3f",
-      "summary": "Nippon Paint bids $8.6 billion for AkzoNobel's decorative-paints unit, a major cross-border M&A deal.",
+      "title": "Williams Gets $5.34 Billion Investment from Blackstone-led Group",
+      "url": "https://www.wsj.com/finance/investing/williams-gets-5-34-billion-investment-from-blackstone-led-group-ac672a23",
+      "summary": "Blackstone-led group invests $5.34 billion in Williams, a major energy infrastructure deal.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Chicago’s Coming Pension ‘Pneumonia’",
-      "url": "https://www.wsj.com/opinion/susana-mendoza-chicago-pensions-stock-market-aaa2f9c6",
-      "summary": "Opinion piece warns Chicago faces a looming pension crisis, likened to onset of 'pneumonia.'",
+      "title": "Opinion | Wealth Taxes Would Hit the Young Hardest",
+      "url": "https://www.wsj.com/opinion/wealth-taxes-would-hit-the-young-hardest-17df2ab2",
+      "summary": "Op-ed argues proposed wealth taxes would disproportionately burden younger generations over time.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Tower Semiconductor Shares Surge Premarket on Japanese Investment",
-      "url": "https://www.wsj.com/tech/tower-semiconductor-shares-surge-premarket-on-japanese-investment-661aad5d",
-      "summary": "Tower Semiconductor shares jump premarket after Japanese investment boosts chipmaker's prospects.",
+      "title": "IBM Loses $69 Billion of Market Value in One Day in Latest AI-Fueled Selloff",
+      "url": "https://www.wsj.com/tech/ai/ibm-stock-profit-warning-earnings-software-8652c06e",
+      "summary": "IBM shed $69 billion in market value in one day amid broader AI-driven tech selloff.",
       "source": "WSJ"
     }
   ]
