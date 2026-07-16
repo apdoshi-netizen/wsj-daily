@@ -1,21 +1,21 @@
 {
   "date": "2026-07-16",
-  "generatedAt": "2026-07-16T08:34:22.257563+00:00",
+  "generatedAt": "2026-07-16T11:12:18.980626+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Treasury Yields Decline on Lower-Than-Expected U.S. Wholesale Inflation",
-      "url": "https://www.wsj.com/finance/investing/jgbs-mixed-may-track-gains-in-u-s-treasurys-9ca01870",
-      "summary": "Treasury yields fell after weaker-than-expected U.S. wholesale inflation data cooled rate-hike expectations.",
+      "title": "Gold Falls Despite Unexpected Decline in U.S. Producer Price Inflation",
+      "url": "https://www.wsj.com/finance/commodities-futures/gold-edges-lower-on-stabilizing-dollar-rate-hike-expectations-161ccbb4",
+      "summary": "Gold slips even as U.S. producer price inflation unexpectedly declined, surprising markets.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "PayPal Shares Surge Premarket on Reports of $53 Billion Takeover",
-      "url": "https://www.wsj.com/finance/investing/paypal-shares-surge-premarket-on-reports-of-53-billion-takeover-offer-27d3a619",
-      "summary": "PayPal shares surge premarket on reports of a $53 billion takeover deal.",
+      "title": "Uber to Buy Delivery Hero in $14.8 Billion Deal",
+      "url": "https://www.wsj.com/business/deals/uber-reaches-deal-for-14-8-billion-takeover-of-delivery-hero-85436e8e",
+      "summary": "Uber agrees to acquire Delivery Hero in a $14.8 billion deal.",
       "source": "WSJ"
     },
     {
@@ -23,7 +23,7 @@
       "label": "Op-Ed",
       "title": "Opinion | Some Good News on Inflation",
       "url": "https://www.wsj.com/opinion/prices-inflation-economy-federal-reserve-kevin-warsh-35fb7ba7",
-      "summary": "Op-ed argues recent inflation data offers encouraging signs for the economy.",
+      "summary": "Column highlights encouraging signs on the inflation front for policymakers.",
       "source": "WSJ"
     },
     {
@@ -31,7 +31,7 @@
       "label": "Tech",
       "title": "TSMC’s Earnings Streak Continues on Robust AI Demand",
       "url": "https://www.wsj.com/tech/tsmcs-earnings-streak-continues-on-robust-ai-demand-1f6b0fe1",
-      "summary": "TSMC extends its earnings streak, powered by robust AI chip demand.",
+      "summary": "TSMC extends its earnings streak, driven by robust AI chip demand.",
       "source": "WSJ"
     }
   ]
