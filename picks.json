@@ -1,13 +1,13 @@
 {
   "date": "2026-07-16",
-  "generatedAt": "2026-07-16T11:12:18.980626+00:00",
+  "generatedAt": "2026-07-16T12:51:17.919611+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Gold Falls Despite Unexpected Decline in U.S. Producer Price Inflation",
-      "url": "https://www.wsj.com/finance/commodities-futures/gold-edges-lower-on-stabilizing-dollar-rate-hike-expectations-161ccbb4",
-      "summary": "Gold slips even as U.S. producer price inflation unexpectedly declined, surprising markets.",
+      "title": "China’s Economy Grows at Weakest Pace Since 2022",
+      "url": "https://www.wsj.com/world/china/chinas-growth-cools-more-than-expected-in-second-quarter-132e0670",
+      "summary": "China's economy grows at its weakest pace since 2022, raising global growth concerns.",
       "source": "WSJ"
     },
     {
@@ -23,15 +23,15 @@
       "label": "Op-Ed",
       "title": "Opinion | Some Good News on Inflation",
       "url": "https://www.wsj.com/opinion/prices-inflation-economy-federal-reserve-kevin-warsh-35fb7ba7",
-      "summary": "Column highlights encouraging signs on the inflation front for policymakers.",
+      "summary": "Opinion piece highlights encouraging signs of easing inflation.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "TSMC’s Earnings Streak Continues on Robust AI Demand",
-      "url": "https://www.wsj.com/tech/tsmcs-earnings-streak-continues-on-robust-ai-demand-1f6b0fe1",
-      "summary": "TSMC extends its earnings streak, driven by robust AI chip demand.",
+      "title": "EU Gives Google Binding Instructions to Open Android, Search Engine Data to AI Rivals",
+      "url": "https://www.wsj.com/tech/eu-gives-google-binding-instructions-to-open-android-search-engine-data-to-ai-rivals-ad5004fb",
+      "summary": "EU orders Google to open Android and Search data to AI rivals.",
       "source": "WSJ"
     }
   ]
