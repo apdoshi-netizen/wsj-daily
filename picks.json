@@ -1,13 +1,13 @@
 {
   "date": "2026-07-17",
-  "generatedAt": "2026-07-17T08:27:54.725612+00:00",
+  "generatedAt": "2026-07-17T10:58:20.264926+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Treasury Yields Rise as Fedspeak Leans Hawkish",
-      "url": "https://www.wsj.com/finance/jgbs-mixed-as-investors-grapple-with-gains-in-u-s-treasurys-rising-oil-prices-6753ed21",
-      "summary": "Treasury yields climb after Fed officials strike a hawkish tone on rates.",
+      "title": "Gold Below $4,000 as U.S.-Iran Conflict Fuels Rate-Hike Bets",
+      "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-central-bank-buying-likely-to-remain-structural-driver-f10d22c2",
+      "summary": "Gold dips below $4,000 as U.S.-Iran conflict raises expectations of Fed rate hikes.",
       "source": "WSJ"
     },
     {
@@ -21,17 +21,17 @@
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | China’s Economy Is in Worse Shape Than You Think",
-      "url": "https://www.wsj.com/opinion/chinas-economy-is-in-worse-shape-than-you-think-95792af7",
-      "summary": "Column argues China's economy is weaker than commonly perceived.",
+      "title": "Opinion | The GOP’s Budget Reconciliation Bust",
+      "url": "https://www.wsj.com/opinion/house-republicans-budget-reconciliation-bill-47cb6b6a",
+      "summary": "Opinion piece criticizes the GOP's budget reconciliation efforts as a policy failure.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "EU Gives Google Binding Instructions to Open Android to AI Rivals",
-      "url": "https://www.wsj.com/tech/eu-gives-google-binding-instructions-to-open-android-search-engine-data-to-ai-rivals-ad5004fb",
-      "summary": "EU orders Google to open Android to AI rivals via binding directive.",
+      "title": "China’s Moonshot AI Releases Model to Challenge Top U.S. Systems",
+      "url": "https://www.wsj.com/tech/ai/chinas-moonshot-ai-releases-model-to-challenge-top-u-s-systems-d84fe6e9",
+      "summary": "China's Moonshot AI unveils a new model aiming to rival top U.S. AI systems.",
       "source": "WSJ"
     }
   ]
