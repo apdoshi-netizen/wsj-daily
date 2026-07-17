@@ -1,13 +1,13 @@
 {
   "date": "2026-07-17",
-  "generatedAt": "2026-07-17T10:58:20.264926+00:00",
+  "generatedAt": "2026-07-17T12:20:38.087990+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
       "title": "Gold Below $4,000 as U.S.-Iran Conflict Fuels Rate-Hike Bets",
       "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-central-bank-buying-likely-to-remain-structural-driver-f10d22c2",
-      "summary": "Gold dips below $4,000 as U.S.-Iran conflict raises expectations of Fed rate hikes.",
+      "summary": "Gold dips below $4,000 as U.S.-Iran conflict fuels rate-hike expectations.",
       "source": "WSJ"
     },
     {
@@ -15,23 +15,23 @@
       "label": "Industry / Company / Transaction",
       "title": "Uber to Buy Delivery Hero in $14.8 Billion Deal",
       "url": "https://www.wsj.com/business/deals/uber-reaches-deal-for-14-8-billion-takeover-of-delivery-hero-85436e8e",
-      "summary": "Uber agrees to acquire Delivery Hero in a $14.8 billion deal.",
+      "summary": "Uber agrees to buy Delivery Hero in a $14.8 billion deal.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | The GOP’s Budget Reconciliation Bust",
-      "url": "https://www.wsj.com/opinion/house-republicans-budget-reconciliation-bill-47cb6b6a",
-      "summary": "Opinion piece criticizes the GOP's budget reconciliation efforts as a policy failure.",
+      "title": "Social Security Is Going Down",
+      "url": "https://www.wsj.com/opinion/free-expression/social-security-is-going-down-b95c65bc",
+      "summary": "Op-ed argues Social Security's finances are deteriorating and heading downward.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "China’s Moonshot AI Releases Model to Challenge Top U.S. Systems",
-      "url": "https://www.wsj.com/tech/ai/chinas-moonshot-ai-releases-model-to-challenge-top-u-s-systems-d84fe6e9",
-      "summary": "China's Moonshot AI unveils a new model aiming to rival top U.S. AI systems.",
+      "title": "AI Is Becoming a Commodity, and That’s a Problem for OpenAI and Anthropic",
+      "url": "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73",
+      "summary": "AI models are becoming commoditized, threatening OpenAI and Anthropic's edge.",
       "source": "WSJ"
     }
   ]
