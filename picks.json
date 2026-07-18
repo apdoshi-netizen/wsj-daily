@@ -1,21 +1,21 @@
 {
   "date": "2026-07-18",
-  "generatedAt": "2026-07-18T12:04:28.029566+00:00",
+  "generatedAt": "2026-07-18T13:48:13.001179+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
       "title": "U.S. Import Prices Unexpectedly Rise in June",
       "url": "https://www.wsj.com/economy/trade/u-s-import-prices-unexpectedly-rise-in-june-d41a0908",
-      "summary": "U.S. import prices unexpectedly rose in June, signaling persistent inflation pressure for markets.",
+      "summary": "U.S. import prices unexpectedly rose in June, signaling persistent inflation pressure despite tariff uncertainty.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Uber to Buy Delivery Hero in $14.8 Billion Deal",
-      "url": "https://www.wsj.com/business/deals/uber-reaches-deal-for-14-8-billion-takeover-of-delivery-hero-85436e8e",
-      "summary": "Uber agrees to acquire Delivery Hero in a $14.8 billion deal, expanding its delivery footprint.",
+      "title": "Eli Lilly to Buy Psychedelic Firm AtaiBeckley for Initial $2.8 Billion",
+      "url": "https://www.wsj.com/health/pharma/eli-lilly-to-buy-ataibeckley-for-initial-2-8-billion-d1a7c61f",
+      "summary": "Eli Lilly agrees to acquire psychedelic drug developer AtaiBeckley for an initial $2.8 billion.",
       "source": "WSJ"
     },
     {
@@ -23,7 +23,7 @@
       "label": "Op-Ed",
       "title": "Opinion | Why Doctors Don’t Like Medicare Advantage",
       "url": "https://www.wsj.com/opinion/why-doctors-dont-like-medicare-advantage-2564fdc0",
-      "summary": "Opinion piece examines why doctors are increasingly dissatisfied with Medicare Advantage plans.",
+      "summary": "Column examines why physicians are increasingly frustrated with Medicare Advantage plans' administrative burdens.",
       "source": "WSJ"
     },
     {
@@ -31,7 +31,7 @@
       "label": "Tech",
       "title": "What to Know About the Chinese AI Models Rattling U.S. Stocks",
       "url": "https://www.wsj.com/tech/ai/what-to-know-about-the-chinese-ai-models-rattling-u-s-stocks-1a80a479",
-      "summary": "Explainer on Chinese AI models that are rattling U.S. stock markets amid AI trade concerns.",
+      "summary": "Chinese AI models are rattling U.S. tech stocks, raising competitive concerns for American AI leaders.",
       "source": "WSJ"
     }
   ]
