@@ -1,37 +1,37 @@
 {
   "date": "2026-07-18",
-  "generatedAt": "2026-07-18T08:08:05.210139+00:00",
+  "generatedAt": "2026-07-18T10:42:04.195488+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Treasury Yields Rise as Fedspeak Leans Hawkish",
-      "url": "https://www.wsj.com/finance/jgbs-mixed-as-investors-grapple-with-gains-in-u-s-treasurys-rising-oil-prices-6753ed21",
-      "summary": "Treasury yields rise after Fed officials signal hawkish stance, moving broader bond and rate markets.",
+      "title": "Impact of Middle East Conflict on U.K. Inflation Limited, Says BOE’s Bailey",
+      "url": "https://www.wsj.com/pro/central-banking/impact-of-middle-east-conflict-on-u-k-inflation-limited-says-boes-bailey-e361eb70",
+      "summary": "Impact of Middle East Conflict on U.K. Inflation Limited, Says BOE’s Bailey",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Uber to Buy Delivery Hero in $14.8 Billion Deal",
-      "url": "https://www.wsj.com/business/deals/uber-reaches-deal-for-14-8-billion-takeover-of-delivery-hero-85436e8e",
-      "summary": "Uber agrees to acquire Delivery Hero in a $14.8 billion deal, expanding its food delivery footprint.",
+      "title": "SpaceX and Pentagon Discuss Data-Center Deal",
+      "url": "https://www.wsj.com/finance/stocks/spacex-and-pentagon-discuss-data-center-deal-23d0772f",
+      "summary": "SpaceX and Pentagon Discuss Data-Center Deal",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Why Doctors Don’t Like Medicare Advantage",
-      "url": "https://www.wsj.com/opinion/why-doctors-dont-like-medicare-advantage-2564fdc0",
-      "summary": "Column examines why physicians are increasingly wary of Medicare Advantage plans and their incentives.",
+      "title": "Opinion | Oregon Is Pumping Children Full of Hormones",
+      "url": "https://www.wsj.com/opinion/oregon-is-pumping-children-full-of-hormones-3c163356",
+      "summary": "Opinion | Oregon Is Pumping Children Full of Hormones",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Exclusive | AI Chip Startup Etched Is in Talks for $20 Billion Valuation",
-      "url": "https://www.wsj.com/tech/ai/ai-chip-startup-etched-is-in-talks-for-20-billion-valuation-caf1787d",
-      "summary": "AI chip startup Etched reportedly in talks to reach a $20 billion valuation amid AI boom.",
+      "title": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
+      "url": "https://www.wsj.com/tech/ibm-ceo-arvind-krishna-has-nowhere-to-hide-from-ai-c9ff290f",
+      "summary": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
       "source": "WSJ"
     }
   ]
