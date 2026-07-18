@@ -1,13 +1,13 @@
 {
-  "date": "2026-07-17",
-  "generatedAt": "2026-07-17T12:20:38.087990+00:00",
+  "date": "2026-07-18",
+  "generatedAt": "2026-07-18T08:08:05.210139+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Gold Below $4,000 as U.S.-Iran Conflict Fuels Rate-Hike Bets",
-      "url": "https://www.wsj.com/finance/commodities-futures/gold-rises-central-bank-buying-likely-to-remain-structural-driver-f10d22c2",
-      "summary": "Gold dips below $4,000 as U.S.-Iran conflict fuels rate-hike expectations.",
+      "title": "Treasury Yields Rise as Fedspeak Leans Hawkish",
+      "url": "https://www.wsj.com/finance/jgbs-mixed-as-investors-grapple-with-gains-in-u-s-treasurys-rising-oil-prices-6753ed21",
+      "summary": "Treasury yields rise after Fed officials signal hawkish stance, moving broader bond and rate markets.",
       "source": "WSJ"
     },
     {
@@ -15,23 +15,23 @@
       "label": "Industry / Company / Transaction",
       "title": "Uber to Buy Delivery Hero in $14.8 Billion Deal",
       "url": "https://www.wsj.com/business/deals/uber-reaches-deal-for-14-8-billion-takeover-of-delivery-hero-85436e8e",
-      "summary": "Uber agrees to buy Delivery Hero in a $14.8 billion deal.",
+      "summary": "Uber agrees to acquire Delivery Hero in a $14.8 billion deal, expanding its food delivery footprint.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Social Security Is Going Down",
-      "url": "https://www.wsj.com/opinion/free-expression/social-security-is-going-down-b95c65bc",
-      "summary": "Op-ed argues Social Security's finances are deteriorating and heading downward.",
+      "title": "Opinion | Why Doctors Don’t Like Medicare Advantage",
+      "url": "https://www.wsj.com/opinion/why-doctors-dont-like-medicare-advantage-2564fdc0",
+      "summary": "Column examines why physicians are increasingly wary of Medicare Advantage plans and their incentives.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "AI Is Becoming a Commodity, and That’s a Problem for OpenAI and Anthropic",
-      "url": "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73",
-      "summary": "AI models are becoming commoditized, threatening OpenAI and Anthropic's edge.",
+      "title": "Exclusive | AI Chip Startup Etched Is in Talks for $20 Billion Valuation",
+      "url": "https://www.wsj.com/tech/ai/ai-chip-startup-etched-is-in-talks-for-20-billion-valuation-caf1787d",
+      "summary": "AI chip startup Etched reportedly in talks to reach a $20 billion valuation amid AI boom.",
       "source": "WSJ"
     }
   ]
