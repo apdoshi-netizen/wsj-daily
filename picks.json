@@ -1,37 +1,37 @@
 {
   "date": "2026-07-18",
-  "generatedAt": "2026-07-18T10:42:04.195488+00:00",
+  "generatedAt": "2026-07-18T12:04:28.029566+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Impact of Middle East Conflict on U.K. Inflation Limited, Says BOE’s Bailey",
-      "url": "https://www.wsj.com/pro/central-banking/impact-of-middle-east-conflict-on-u-k-inflation-limited-says-boes-bailey-e361eb70",
-      "summary": "Impact of Middle East Conflict on U.K. Inflation Limited, Says BOE’s Bailey",
+      "title": "U.S. Import Prices Unexpectedly Rise in June",
+      "url": "https://www.wsj.com/economy/trade/u-s-import-prices-unexpectedly-rise-in-june-d41a0908",
+      "summary": "U.S. import prices unexpectedly rose in June, signaling persistent inflation pressure for markets.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "SpaceX and Pentagon Discuss Data-Center Deal",
-      "url": "https://www.wsj.com/finance/stocks/spacex-and-pentagon-discuss-data-center-deal-23d0772f",
-      "summary": "SpaceX and Pentagon Discuss Data-Center Deal",
+      "title": "Uber to Buy Delivery Hero in $14.8 Billion Deal",
+      "url": "https://www.wsj.com/business/deals/uber-reaches-deal-for-14-8-billion-takeover-of-delivery-hero-85436e8e",
+      "summary": "Uber agrees to acquire Delivery Hero in a $14.8 billion deal, expanding its delivery footprint.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Oregon Is Pumping Children Full of Hormones",
-      "url": "https://www.wsj.com/opinion/oregon-is-pumping-children-full-of-hormones-3c163356",
-      "summary": "Opinion | Oregon Is Pumping Children Full of Hormones",
+      "title": "Opinion | Why Doctors Don’t Like Medicare Advantage",
+      "url": "https://www.wsj.com/opinion/why-doctors-dont-like-medicare-advantage-2564fdc0",
+      "summary": "Opinion piece examines why doctors are increasingly dissatisfied with Medicare Advantage plans.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
-      "url": "https://www.wsj.com/tech/ibm-ceo-arvind-krishna-has-nowhere-to-hide-from-ai-c9ff290f",
-      "summary": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
+      "title": "What to Know About the Chinese AI Models Rattling U.S. Stocks",
+      "url": "https://www.wsj.com/tech/ai/what-to-know-about-the-chinese-ai-models-rattling-u-s-stocks-1a80a479",
+      "summary": "Explainer on Chinese AI models that are rattling U.S. stock markets amid AI trade concerns.",
       "source": "WSJ"
     }
   ]
