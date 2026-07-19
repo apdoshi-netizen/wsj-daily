@@ -1,37 +1,37 @@
 {
-  "date": "2026-07-18",
-  "generatedAt": "2026-07-18T13:48:13.001179+00:00",
+  "date": "2026-07-19",
+  "generatedAt": "2026-07-19T08:32:51.731110+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "U.S. Import Prices Unexpectedly Rise in June",
-      "url": "https://www.wsj.com/economy/trade/u-s-import-prices-unexpectedly-rise-in-june-d41a0908",
-      "summary": "U.S. import prices unexpectedly rose in June, signaling persistent inflation pressure despite tariff uncertainty.",
+      "title": "The Justice Department Is Pulling Back on Prosecuting Corporate Crime",
+      "url": "https://www.wsj.com/finance/regulation/the-justice-department-is-pulling-back-on-prosecuting-corporate-crime-dabf95a2",
+      "summary": "The Justice Department Is Pulling Back on Prosecuting Corporate Crime",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Eli Lilly to Buy Psychedelic Firm AtaiBeckley for Initial $2.8 Billion",
-      "url": "https://www.wsj.com/health/pharma/eli-lilly-to-buy-ataibeckley-for-initial-2-8-billion-d1a7c61f",
-      "summary": "Eli Lilly agrees to acquire psychedelic drug developer AtaiBeckley for an initial $2.8 billion.",
+      "title": "Israel’s $50 Million Experiment to Change U.S. Public Opinion",
+      "url": "https://www.wsj.com/politics/israels-50-million-experiment-to-change-u-s-public-opinion-253b3b70",
+      "summary": "Israel’s $50 Million Experiment to Change U.S. Public Opinion",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Why Doctors Don’t Like Medicare Advantage",
-      "url": "https://www.wsj.com/opinion/why-doctors-dont-like-medicare-advantage-2564fdc0",
-      "summary": "Column examines why physicians are increasingly frustrated with Medicare Advantage plans' administrative burdens.",
+      "title": "Opinion | Free Expression on the Weekend",
+      "url": "https://www.wsj.com/opinion/free-expression/free-expression-on-the-weekend-7eb52400",
+      "summary": "Opinion | Free Expression on the Weekend",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "What to Know About the Chinese AI Models Rattling U.S. Stocks",
-      "url": "https://www.wsj.com/tech/ai/what-to-know-about-the-chinese-ai-models-rattling-u-s-stocks-1a80a479",
-      "summary": "Chinese AI models are rattling U.S. tech stocks, raising competitive concerns for American AI leaders.",
+      "title": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
+      "url": "https://www.wsj.com/tech/ibm-ceo-arvind-krishna-has-nowhere-to-hide-from-ai-c9ff290f",
+      "summary": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
       "source": "WSJ"
     }
   ]
