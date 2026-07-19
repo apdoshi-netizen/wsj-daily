@@ -1,13 +1,13 @@
 {
   "date": "2026-07-19",
-  "generatedAt": "2026-07-19T12:06:38.289014+00:00",
+  "generatedAt": "2026-07-19T13:53:10.351029+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Oil Futures Rise on Middle East Escalation Fears",
-      "url": "https://www.wsj.com/finance/commodities-futures/oil-rises-amid-escalating-supply-disruption-concerns-c3dcf86d",
-      "summary": "Oil futures climb as Middle East tensions escalate, threatening broader market stability.",
+      "title": "U.S. Import Prices Unexpectedly Rise in June",
+      "url": "https://www.wsj.com/economy/trade/u-s-import-prices-unexpectedly-rise-in-june-d41a0908",
+      "summary": "U.S. import prices rose unexpectedly in June, signaling inflation pressures for Fed policy.",
       "source": "WSJ"
     },
     {
@@ -15,7 +15,7 @@
       "label": "Industry / Company / Transaction",
       "title": "Exclusive | Databricks Set to Hit $188 Billion Valuation With New Investment From Coatue",
       "url": "https://www.wsj.com/tech/ai/databricks-set-to-hit-188-billion-valuation-with-new-investment-from-coatue-9eda18d6",
-      "summary": "Databricks nears $188 billion valuation with new investment led by Coatue Management.",
+      "summary": "Databricks nears $188 billion valuation with fresh investment from Coatue, per exclusive report.",
       "source": "WSJ"
     },
     {
@@ -29,9 +29,9 @@
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Exclusive | AI Chip Startup Etched Is in Talks for $20 Billion Valuation",
-      "url": "https://www.wsj.com/tech/ai/ai-chip-startup-etched-is-in-talks-for-20-billion-valuation-caf1787d",
-      "summary": "AI chip startup Etched in talks to reach a $20 billion valuation.",
+      "title": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
+      "url": "https://www.wsj.com/tech/ibm-ceo-arvind-krishna-has-nowhere-to-hide-from-ai-c9ff290f",
+      "summary": "IBM CEO Arvind Krishna faces mounting pressure to prove AI strategy amid industry shifts.",
       "source": "WSJ"
     }
   ]
