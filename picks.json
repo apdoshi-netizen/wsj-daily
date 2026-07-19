@@ -1,37 +1,37 @@
 {
   "date": "2026-07-19",
-  "generatedAt": "2026-07-19T13:53:10.351029+00:00",
+  "generatedAt": "2026-07-19T17:02:37.938356+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
       "title": "U.S. Import Prices Unexpectedly Rise in June",
       "url": "https://www.wsj.com/economy/trade/u-s-import-prices-unexpectedly-rise-in-june-d41a0908",
-      "summary": "U.S. import prices rose unexpectedly in June, signaling inflation pressures for Fed policy.",
+      "summary": "U.S. import prices unexpectedly rose in June, a key inflation data point affecting rate outlook.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Exclusive | Databricks Set to Hit $188 Billion Valuation With New Investment From Coatue",
-      "url": "https://www.wsj.com/tech/ai/databricks-set-to-hit-188-billion-valuation-with-new-investment-from-coatue-9eda18d6",
-      "summary": "Databricks nears $188 billion valuation with fresh investment from Coatue, per exclusive report.",
+      "title": "Fifth Third Profit Boosted by Comerica Acquisition",
+      "url": "https://www.wsj.com/business/earnings/fifth-third-profit-boosted-by-comerica-acquisition-bae8e106",
+      "summary": "Fifth Third's profit rose, boosted by its acquisition of Comerica, a concrete bank M&A story.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Why Doctors Don’t Like Medicare Advantage",
-      "url": "https://www.wsj.com/opinion/why-doctors-dont-like-medicare-advantage-2564fdc0",
-      "summary": "Column examines why physicians are increasingly wary of Medicare Advantage plans.",
+      "title": "Opinion | America Needs the Filibuster",
+      "url": "https://www.wsj.com/opinion/free-expression/america-needs-the-filibuster-78964724",
+      "summary": "Opinion piece argues the Senate filibuster remains essential to U.S. governance and policy stability.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
-      "url": "https://www.wsj.com/tech/ibm-ceo-arvind-krishna-has-nowhere-to-hide-from-ai-c9ff290f",
-      "summary": "IBM CEO Arvind Krishna faces mounting pressure to prove AI strategy amid industry shifts.",
+      "title": "Exclusive | AI Chip Startup Etched Is in Talks for $20 Billion Valuation",
+      "url": "https://www.wsj.com/tech/ai/ai-chip-startup-etched-is-in-talks-for-20-billion-valuation-caf1787d",
+      "summary": "AI chip startup Etched is reportedly in talks for a $20 billion valuation, per exclusive report.",
       "source": "WSJ"
     }
   ]
