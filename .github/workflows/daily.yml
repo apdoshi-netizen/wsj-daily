@@ -2,11 +2,12 @@ name: WSJ Daily picks
 
 on:
   schedule:
-    # Two shots before the 9 AM ET send (13:00 UTC EDT / 14:00 UTC EST), for
-    # redundancy — GitHub's scheduler can delay or skip an individual tick. The
-    # later run overwrites picks.json, so the freshest good run before send wins.
-    # 10:17 and 12:17 UTC = ~6:17 and 8:17 AM EDT (5:17 / 7:17 AM EST).
-    - cron: '17 10,12 * * *'
+    # Two shots before the 9 AM ET send (13:00 UTC EDT / 14:00 UTC EST).
+    # NOTE: observed GitHub scheduler delay is 45-110 min, so these are set early
+    # enough that even a badly delayed tick still lands before the send. Expected
+    # actual run times ~09:00-10:10 and ~11:00-12:10 UTC (~5-8 AM ET).
+    # The later run overwrites picks.json, so the freshest good run wins.
+    - cron: '17 8,10 * * *'
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
