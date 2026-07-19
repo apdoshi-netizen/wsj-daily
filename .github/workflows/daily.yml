@@ -2,11 +2,11 @@ name: WSJ Daily picks
 
 on:
   schedule:
-    # Multiple shots before the 9 AM ET send (13:00 UTC EDT / 14:00 UTC EST), for
-    # redundancy — GitHub's scheduler can delay or skip an individual tick. Each
-    # run overwrites picks.json, so the latest good one before 9 AM ET wins.
-    # 06:17, 09:17, 11:17, 12:17 UTC = ~2:17 / 5:17 / 7:17 / 8:17 AM EDT.
-    - cron: '17 6,9,11,12 * * *'
+    # Two shots before the 9 AM ET send (13:00 UTC EDT / 14:00 UTC EST), for
+    # redundancy — GitHub's scheduler can delay or skip an individual tick. The
+    # later run overwrites picks.json, so the freshest good run before send wins.
+    # 10:17 and 12:17 UTC = ~6:17 and 8:17 AM EDT (5:17 / 7:17 AM EST).
+    - cron: '17 10,12 * * *'
   workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
@@ -24,10 +24,10 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 generate.py
-      - name: Commit picks.json if changed
+      - name: Commit picks.json + history.json if changed
         run: |
           git config user.name "wsj-daily-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add picks.json
+          git add picks.json history.json
           git diff --staged --quiet || git commit -m "picks: $(TZ=America/New_York date +%F)"
           git push

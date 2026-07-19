@@ -38,6 +38,48 @@ SLOTS = [
 NOISE = re.compile(r'(Print Edition|News Archive|Exchange Rate|Roundup: Market Talk|What to Read|WSJ Dollar Index|Latest News and Forecasts)', re.I)
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
+HISTORY_FILE = "history.json"   # {date: [{title, url}, ...]} — what was picked each day
+HISTORY_DAYS = 21               # how far back to block repeats
+MAX_RESOLVE_TRIES = 4           # candidates to try per slot before giving up
+
+
+def norm_title(t):
+    """Normalize a headline for identity matching (ignores prefixes/punctuation)."""
+    t = re.sub(r'^\s*(exclusive|opinion|analysis|review|live|updated)\s*\|\s*', '', t.strip(), flags=re.I)
+    return re.sub(r'[^a-z0-9]+', '', t.lower())
+
+
+def load_history():
+    try:
+        with open(HISTORY_FILE) as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def prior_keys(hist, today):
+    """Titles + URLs picked on PREVIOUS days (today's entry is ignored so the
+    day's later runs don't exclude their own earlier picks)."""
+    cutoff = (datetime.date.fromisoformat(today) - datetime.timedelta(days=HISTORY_DAYS)).isoformat()
+    titles, urls = set(), set()
+    for day, items in hist.items():
+        if day == today or day < cutoff:
+            continue
+        for it in items:
+            titles.add(norm_title(it.get("title", "")))
+            urls.add(it.get("url", ""))
+    titles.discard("")
+    urls.discard("")
+    return titles, urls
+
+
+def save_history(hist, today, picks):
+    hist[today] = [{"title": p["title"], "url": p["url"]} for p in picks if p["url"]]
+    cutoff = (datetime.date.fromisoformat(today) - datetime.timedelta(days=HISTORY_DAYS)).isoformat()
+    hist = {d: v for d, v in hist.items() if d >= cutoff}
+    with open(HISTORY_FILE, "w") as f:
+        json.dump(dict(sorted(hist.items())), f, indent=2, ensure_ascii=False)
+
 
 def curl(args):
     return subprocess.run(["curl", "-sL", "--max-time", "30", "-A", UA] + args,
@@ -162,7 +204,24 @@ def resolve_one(gn):
 
 
 def main():
+    date = datetime.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+    hist = load_history()
+    prior_titles, prior_urls = prior_keys(hist, date)
+
     cands = fetch_candidates()
+
+    # Drop articles already sent on a previous day, BEFORE curation, so the model
+    # cannot pick a repeat. Reindex so ids stay contiguous.
+    dropped = 0
+    for key, lst in cands.items():
+        kept = [c for c in lst if norm_title(c["title"]) not in prior_titles]
+        dropped += len(lst) - len(kept)
+        for i, c in enumerate(kept):
+            c["i"] = i
+        cands[key] = kept
+    print("dedup: dropped %d previously-sent candidate(s); history spans %d day(s)"
+          % (dropped, len(hist)), file=sys.stderr)
+
     try:
         selections = curate_with_claude(cands)
         print("curation: Claude", file=sys.stderr)
@@ -170,25 +229,48 @@ def main():
         print("curation: heuristic fallback (" + str(e)[:400] + ")", file=sys.stderr)
         selections = heuristic(cands)
 
-    labels = {k: k for k, _q, _m, _kw in SLOTS}
     picks = []
+    used_urls = set()
     for key, _q, _m, _kw in SLOTS:              # keep canonical slot order
         s = next((x for x in selections if x["slot"] == key), None)
-        row = None
+        lst = cands.get(key, [])
+        chosen = None
         if s and s.get("i", -1) >= 0:
-            row = next((c for c in cands.get(key, []) if c["i"] == s["i"]), None)
-        if not row:
-            picks.append({"slot": key, "label": labels[key], "title": "", "url": "",
-                          "summary": "No WSJ pick today.", "source": "WSJ"}); continue
-        direct = resolve_one(row["url"]) or ""
-        print(("OK   " if direct else "FAIL ") + key + ": " + row["title"][:55], file=sys.stderr)
-        picks.append({"slot": key, "label": labels[key], "title": row["title"], "url": direct,
-                      "summary": (s.get("summary") or "")[:200], "source": "WSJ"})
+            chosen = next((c for c in lst if c["i"] == s["i"]), None)
+        # Try the model's pick first, then the rest as fallbacks. A candidate is
+        # rejected if it fails to resolve, or resolves to a URL already used
+        # (earlier day, or another slot today).
+        order = ([chosen] if chosen else []) + [c for c in lst if c is not chosen]
+        picked = None
+        for cand in order[:MAX_RESOLVE_TRIES]:
+            direct = resolve_one(cand["url"])
+            if not direct:
+                continue
+            if direct in prior_urls or direct in used_urls:
+                print("  skip dup: " + cand["title"][:55], file=sys.stderr)
+                continue
+            picked = (cand, direct)
+            break
 
-    date = datetime.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+        if not picked:
+            print("FAIL " + key + ": no usable candidate", file=sys.stderr)
+            picks.append({"slot": key, "label": key, "title": "", "url": "",
+                          "summary": "No WSJ pick today.", "source": "WSJ"})
+            continue
+
+        cand, direct = picked
+        used_urls.add(direct)
+        # Only reuse the model's summary if we actually used the model's pick —
+        # otherwise it would describe a different article.
+        summary = (s.get("summary") or "")[:200] if (s and cand is chosen) else ""
+        print("OK   " + key + ": " + cand["title"][:55], file=sys.stderr)
+        picks.append({"slot": key, "label": key, "title": cand["title"], "url": direct,
+                      "summary": summary, "source": "WSJ"})
+
     result = {"date": date, "generatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(), "picks": picks}
     with open("picks.json", "w") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
+    save_history(hist, date, picks)
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
