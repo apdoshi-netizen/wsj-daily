@@ -1,6 +1,6 @@
 {
   "date": "2026-07-19",
-  "generatedAt": "2026-07-19T08:32:51.731110+00:00",
+  "generatedAt": "2026-07-19T10:42:59.829818+00:00",
   "picks": [
     {
       "slot": "Macro",
@@ -29,9 +29,9 @@
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
-      "url": "https://www.wsj.com/tech/ibm-ceo-arvind-krishna-has-nowhere-to-hide-from-ai-c9ff290f",
-      "summary": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
+      "title": "Pastors Using AI to Help Write Sermons Grapple With Where to Draw the Line",
+      "url": "https://www.wsj.com/tech/ai/pastors-using-ai-to-help-write-sermons-grapple-with-where-to-draw-the-line-97dcd1f9",
+      "summary": "Pastors Using AI to Help Write Sermons Grapple With Where to Draw the Line",
       "source": "WSJ"
     }
   ]
