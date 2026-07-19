@@ -1,37 +1,37 @@
 {
   "date": "2026-07-19",
-  "generatedAt": "2026-07-19T10:42:59.829818+00:00",
+  "generatedAt": "2026-07-19T12:06:38.289014+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "The Justice Department Is Pulling Back on Prosecuting Corporate Crime",
-      "url": "https://www.wsj.com/finance/regulation/the-justice-department-is-pulling-back-on-prosecuting-corporate-crime-dabf95a2",
-      "summary": "The Justice Department Is Pulling Back on Prosecuting Corporate Crime",
+      "title": "Oil Futures Rise on Middle East Escalation Fears",
+      "url": "https://www.wsj.com/finance/commodities-futures/oil-rises-amid-escalating-supply-disruption-concerns-c3dcf86d",
+      "summary": "Oil futures climb as Middle East tensions escalate, threatening broader market stability.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Israel’s $50 Million Experiment to Change U.S. Public Opinion",
-      "url": "https://www.wsj.com/politics/israels-50-million-experiment-to-change-u-s-public-opinion-253b3b70",
-      "summary": "Israel’s $50 Million Experiment to Change U.S. Public Opinion",
+      "title": "Exclusive | Databricks Set to Hit $188 Billion Valuation With New Investment From Coatue",
+      "url": "https://www.wsj.com/tech/ai/databricks-set-to-hit-188-billion-valuation-with-new-investment-from-coatue-9eda18d6",
+      "summary": "Databricks nears $188 billion valuation with new investment led by Coatue Management.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | Free Expression on the Weekend",
-      "url": "https://www.wsj.com/opinion/free-expression/free-expression-on-the-weekend-7eb52400",
-      "summary": "Opinion | Free Expression on the Weekend",
+      "title": "Opinion | Why Doctors Don’t Like Medicare Advantage",
+      "url": "https://www.wsj.com/opinion/why-doctors-dont-like-medicare-advantage-2564fdc0",
+      "summary": "Column examines why physicians are increasingly wary of Medicare Advantage plans.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Pastors Using AI to Help Write Sermons Grapple With Where to Draw the Line",
-      "url": "https://www.wsj.com/tech/ai/pastors-using-ai-to-help-write-sermons-grapple-with-where-to-draw-the-line-97dcd1f9",
-      "summary": "Pastors Using AI to Help Write Sermons Grapple With Where to Draw the Line",
+      "title": "Exclusive | AI Chip Startup Etched Is in Talks for $20 Billion Valuation",
+      "url": "https://www.wsj.com/tech/ai/ai-chip-startup-etched-is-in-talks-for-20-billion-valuation-caf1787d",
+      "summary": "AI chip startup Etched in talks to reach a $20 billion valuation.",
       "source": "WSJ"
     }
   ]
