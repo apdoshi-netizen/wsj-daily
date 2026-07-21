@@ -1,37 +1,37 @@
 {
-  "date": "2026-07-20",
-  "generatedAt": "2026-07-20T11:14:35.567662+00:00",
+  "date": "2026-07-21",
+  "generatedAt": "2026-07-21T10:34:17.557813+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "ECB to Hold Rates Steady as Rebound in Energy Prices Threatens to Revive Inflation",
-      "url": "https://www.wsj.com/pro/central-banking/ecb-to-hold-rates-steady-as-rebound-in-energy-prices-threatens-to-revive-inflation-5fd3d2be",
-      "summary": "ECB expected to hold rates steady as rebounding energy prices threaten to reignite inflation.",
+      "title": "Oil Eases as Mediators Push for New U.S.-Iran Ceasefire",
+      "url": "https://www.wsj.com/finance/commodities-futures/oil-edges-lower-amid-hopes-of-new-u-s-iran-ceasefire-892b1c0a",
+      "summary": "Oil prices ease as mediators push for a renewed U.S.-Iran ceasefire, easing market tensions.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Koch-Owned Molex Agrees to $6.29 Billion Data-Center Cable Deal With Prysmian",
-      "url": "https://www.wsj.com/business/deals/koch-owned-molex-agrees-to-6-29-billion-data-center-cable-deal-with-prysmian-0f0c3d7e",
-      "summary": "Koch's Molex agrees to $6.29 billion data-center cable deal with Prysmian.",
+      "title": "Mitie Shares Soar on $4.2 Billion Takeover by OCS",
+      "url": "https://www.wsj.com/business/deals/mitie-group-agrees-to-be-acquired-by-ocs-in-4-2-billion-cash-deal-781236a1",
+      "summary": "Mitie shares surge after OCS agrees to a $4.2 billion takeover of the company.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | The Tariff Danger in Graham’s Russia Sanctions Bill",
-      "url": "https://www.wsj.com/opinion/the-tariff-danger-in-grahams-russia-sanctions-bill-d1ea743c",
-      "summary": "Opinion argues Graham's Russia sanctions bill carries hidden tariff dangers for trade policy.",
+      "title": "Opinion | The Everything Tax",
+      "url": "https://www.wsj.com/opinion/the-everything-tax-1bfa72fd",
+      "summary": "Opinion piece critiques sweeping tariff policies as an 'everything tax' on the economy.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "IBM CEO Arvind Krishna Has Nowhere to Hide From AI",
-      "url": "https://www.wsj.com/tech/ibm-ceo-arvind-krishna-has-nowhere-to-hide-from-ai-c9ff290f",
-      "summary": "IBM CEO Arvind Krishna faces mounting pressure to prove AI strategy amid industry shifts.",
+      "title": "Top American AI Execs Sound Alarm on Chinese Models",
+      "url": "https://www.wsj.com/tech/ai/top-american-ai-execs-sound-alarm-on-chinese-models-3c74f8c1",
+      "summary": "Leading American AI executives warn about the rising threat from Chinese AI models.",
       "source": "WSJ"
     }
   ]
