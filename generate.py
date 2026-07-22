@@ -147,10 +147,10 @@ def curate_with_claude(cands):
         "Topical fit is the FIRST filter — a fresh but off-topic headline must NOT be chosen; only after "
         "topical fit, prefer the fresher/more significant option. If a slot's candidates are all weak fits, "
         "pick the least-bad one. The 4 picks must be 4 distinct stories. "
-        "Write a summary <=25 words grounded ONLY in the headline. Return ONLY:\n"
-        '{"picks":[{"slot":"Macro","i":N,"summary":"..."},'
-        '{"slot":"Industry / Company / Transaction","i":N,"summary":"..."},'
-        '{"slot":"Op-Ed","i":N,"summary":"..."},{"slot":"Tech","i":N,"summary":"..."}]}')
+        "Reply with EXACTLY four lines and nothing else, one per slot, each formatted:\n"
+        "slot name|chosen id|summary of <=25 words grounded only in the headline\n"
+        "Slot names exactly: Macro, Industry / Company / Transaction, Op-Ed, Tech. "
+        "If a slot has no candidates use id -1 and summary: No WSJ pick today.")
     payload = json.dumps({"model": MODEL, "max_tokens": 1024,
                           "system": "You are a financial news editor. Follow the rubric and return only JSON.\n\n" + rubric,
                           "messages": [{"role": "user", "content": user}]})
@@ -167,7 +167,28 @@ def curate_with_claude(cands):
     text = next((b.get("text") for b in data["content"] if b.get("type") == "text"), None)
     if not text:
         raise RuntimeError("no text block; content=" + json.dumps(data["content"])[:400])
-    return json.loads(re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.I).strip())["picks"]
+    return parse_selections(text)
+
+
+def parse_selections(text):
+    """Parse pipe-delimited selection lines: 'slot|id|summary'. Line-based on
+    purpose — immune to the quote/JSON-escaping breakage LLM JSON is prone to."""
+    valid = {k for k, _q, _m, _kw in SLOTS}
+    sels = []
+    for line in text.strip().splitlines():
+        parts = line.split("|", 2)
+        if len(parts) != 3:
+            continue
+        slot, idx, summary = (p.strip().strip("*`") for p in parts)
+        try:
+            idx = int(idx)
+        except ValueError:
+            continue
+        if slot in valid and slot not in {s["slot"] for s in sels}:
+            sels.append({"slot": slot, "i": idx, "summary": summary})
+    if len(sels) != len(SLOTS):
+        raise RuntimeError("parsed %d/%d selections; raw=%r" % (len(sels), len(SLOTS), text[:300]))
+    return sels
 
 
 def heuristic(cands):
@@ -205,6 +226,19 @@ def resolve_one(gn):
 
 def main():
     date = datetime.datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+
+    # Rescue mode (late cron tick): only regenerate if the day's picks are
+    # missing, stale, or empty — otherwise exit without spending an API call.
+    if os.environ.get("RESCUE_ONLY"):
+        try:
+            prev = json.load(open("picks.json"))
+            if prev.get("date") == date and any(p.get("url") for p in prev.get("picks", [])):
+                print("rescue: healthy picks for today already exist; nothing to do", file=sys.stderr)
+                return
+        except Exception:
+            pass
+        print("rescue: today's picks missing/empty — regenerating", file=sys.stderr)
+
     hist = load_history()
     prior_titles, prior_urls = prior_keys(hist, date)
 
@@ -266,6 +300,15 @@ def main():
         print("OK   " + key + ": " + cand["title"][:55], file=sys.stderr)
         picks.append({"slot": key, "label": key, "title": cand["title"], "url": direct,
                       "summary": summary, "source": "WSJ"})
+
+    if not any(p["url"] for p in picks):
+        # Almost always means Google CAPTCHA-flagged this runner's IP. Do NOT
+        # write an all-empty picks.json (the mailer's freshness check then sends
+        # a compact alert instead of an empty digest), and fail the job so the
+        # next scheduled tick retries on a fresh runner.
+        print("ERROR: zero slots resolved — likely blocked runner IP; leaving previous "
+              "picks.json in place and failing so a later run retries", file=sys.stderr)
+        sys.exit(1)
 
     result = {"date": date, "generatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(), "picks": picks}
     with open("picks.json", "w") as f:
