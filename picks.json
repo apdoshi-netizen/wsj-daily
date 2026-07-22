@@ -1,37 +1,37 @@
 {
   "date": "2026-07-22",
-  "generatedAt": "2026-07-22T10:35:00.279550+00:00",
+  "generatedAt": "2026-07-22T16:41:53.087035+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "",
-      "url": "",
-      "summary": "No WSJ pick today.",
+      "title": "Trump’s Tariffs Enter New Phase, Ending Months of Calm",
+      "url": "https://www.wsj.com/economy/trade/trumps-tariffs-enter-new-phase-ending-months-of-calm-65f33e3e",
+      "summary": "Trump’s tariffs escalate broadly, ending months of policy calm across markets and trade relations.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "",
-      "url": "",
-      "summary": "No WSJ pick today.",
+      "title": "Prologis Makes Final $18.7 Billion Bid to Take Over U.K.’s Segro",
+      "url": "https://www.wsj.com/business/prologis-makes-final-18-7-billion-bid-to-take-over-segro-e6de3ed5",
+      "summary": "Prologis makes final $18.7 billion bid to acquire U.K.’s Segro in major real estate deal.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "",
-      "url": "",
-      "summary": "No WSJ pick today.",
+      "title": "Opinion | Trade Deficit Derangement Syndrome",
+      "url": "https://www.wsj.com/opinion/trade-deficit-derangement-syndrome-fe3f37d6",
+      "summary": "Column argues against alarm over U.S. trade deficit, calling concerns \"derangement syndrome.\"",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "",
-      "url": "",
-      "summary": "No WSJ pick today.",
+      "title": "Exclusive | OpenAI’s Planned Cloud Spending Hits $750 Billion as Computing Efforts Ramp Up",
+      "url": "https://www.wsj.com/tech/openais-planned-cloud-spending-hits-750-billion-as-computing-efforts-ramp-up-6ac3f58a",
+      "summary": "OpenAI’s planned cloud computing spending reaches $750 billion as its computing efforts ramp up.",
       "source": "WSJ"
     }
   ]
