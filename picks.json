@@ -1,37 +1,37 @@
 {
-  "date": "2026-07-23",
-  "generatedAt": "2026-07-23T12:01:55.988132+00:00",
+  "date": "2026-07-24",
+  "generatedAt": "2026-07-24T10:28:09.476958+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
-      "title": "Global Bond Yields Jump as Oil Prices Surge, Inflation Fears Mount",
-      "url": "https://www.wsj.com/economy/central-banking/global-bond-yields-jump-as-oil-prices-surge-inflation-fears-mount-10715801",
-      "summary": "Global bond yields jumped as oil prices surged, intensifying inflation fears across markets.",
+      "title": "Trump Administration Announces New Tariffs on 60 Countries",
+      "url": "https://www.wsj.com/podcasts/whats-news/trump-administration-announces-new-tariffs-on-60-countries/6869b83b-7ba4-4f20-b0e1-24804ec316bb",
+      "summary": "Trump administration announced new tariffs on 60 countries, escalating trade policy tensions with broad market implications.",
       "source": "WSJ"
     },
     {
       "slot": "Industry / Company / Transaction",
       "label": "Industry / Company / Transaction",
-      "title": "Nestle Sells Half of Waters Unit to Platinum Equity in $3.4 Billion Joint-Venture Deal",
-      "url": "https://www.wsj.com/business/deals/nestle-to-offload-half-of-waters-business-in-joint-venture-with-platinum-equity-4dfd3da6",
-      "summary": "Nestle sells half of its Waters unit to Platinum Equity in $3.4 billion joint-venture deal.",
+      "title": "HSBC to Sell Singapore Insurance Business to Allianz for $2.1 Billion",
+      "url": "https://www.wsj.com/finance/hsbc-to-sell-singapore-insurance-business-to-allianz-for-2-1-billion-05318091",
+      "summary": "HSBC agreed to sell its Singapore insurance business to Allianz for $2.1 billion.",
       "source": "WSJ"
     },
     {
       "slot": "Op-Ed",
       "label": "Op-Ed",
-      "title": "Opinion | The FDA Discovers the Power of Peptides",
-      "url": "https://www.wsj.com/opinion/the-fda-discovers-the-power-of-peptides-b153f39a",
-      "summary": "Opinion piece examines FDA's growing recognition of peptides' therapeutic and regulatory significance.",
+      "title": "Opinion | The ‘Surprise Billing’ Racket",
+      "url": "https://www.wsj.com/opinion/surprise-billing-act-health-insurance-providers-15c1eadb",
+      "summary": "Opinion piece argues against the \"surprise billing\" practices in healthcare, a substantive policy critique.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Google Fined $1 Billion Under EU’s Tech Antitrust Rules",
-      "url": "https://www.wsj.com/tech/google-fined-1-02-billion-under-eus-tech-antitrust-rules-7e8ae1fb",
-      "summary": "Google fined $1 billion by EU regulators under new tech antitrust enforcement rules.",
+      "title": "Exclusive | Stripe in Talks to Buy Buzzy AI-Model Marketplace OpenRouter",
+      "url": "https://www.wsj.com/tech/ai/stripe-in-talks-to-buy-buzzy-ai-model-marketplace-openrouter-decc6a74",
+      "summary": "Stripe reportedly in talks to acquire AI-model marketplace OpenRouter, a notable AI industry deal.",
       "source": "WSJ"
     }
   ]
