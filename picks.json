@@ -1,13 +1,13 @@
 {
   "date": "2026-07-24",
-  "generatedAt": "2026-07-24T10:28:09.476958+00:00",
+  "generatedAt": "2026-07-24T11:55:06.067482+00:00",
   "picks": [
     {
       "slot": "Macro",
       "label": "Macro",
       "title": "Trump Administration Announces New Tariffs on 60 Countries",
       "url": "https://www.wsj.com/podcasts/whats-news/trump-administration-announces-new-tariffs-on-60-countries/6869b83b-7ba4-4f20-b0e1-24804ec316bb",
-      "summary": "Trump administration announced new tariffs on 60 countries, escalating trade policy tensions with broad market implications.",
+      "summary": "Trump administration imposes new tariffs on 60 countries, a major trade-policy shift with broad market impact.",
       "source": "WSJ"
     },
     {
@@ -15,7 +15,7 @@
       "label": "Industry / Company / Transaction",
       "title": "HSBC to Sell Singapore Insurance Business to Allianz for $2.1 Billion",
       "url": "https://www.wsj.com/finance/hsbc-to-sell-singapore-insurance-business-to-allianz-for-2-1-billion-05318091",
-      "summary": "HSBC agreed to sell its Singapore insurance business to Allianz for $2.1 billion.",
+      "summary": "HSBC agrees to sell its Singapore insurance business to Allianz for $2.1 billion.",
       "source": "WSJ"
     },
     {
@@ -23,15 +23,15 @@
       "label": "Op-Ed",
       "title": "Opinion | The ‘Surprise Billing’ Racket",
       "url": "https://www.wsj.com/opinion/surprise-billing-act-health-insurance-providers-15c1eadb",
-      "summary": "Opinion piece argues against the \"surprise billing\" practices in healthcare, a substantive policy critique.",
+      "summary": "Op-ed argues against the \"surprise billing\" practices, a substantive healthcare economics policy critique.",
       "source": "WSJ"
     },
     {
       "slot": "Tech",
       "label": "Tech",
-      "title": "Exclusive | Stripe in Talks to Buy Buzzy AI-Model Marketplace OpenRouter",
-      "url": "https://www.wsj.com/tech/ai/stripe-in-talks-to-buy-buzzy-ai-model-marketplace-openrouter-decc6a74",
-      "summary": "Stripe reportedly in talks to acquire AI-model marketplace OpenRouter, a notable AI industry deal.",
+      "title": "Exclusive | AMD and Anthropic Sign Major Chips-and-Investment Deal",
+      "url": "https://www.wsj.com/tech/ai/amd-and-anthropic-sign-major-chips-and-investment-deal-4adfdc45",
+      "summary": "AMD and Anthropic sign a major chips-and-investment deal, a significant AI/chip industry development.",
       "source": "WSJ"
     }
   ]
